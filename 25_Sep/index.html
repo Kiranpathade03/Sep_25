@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ABC(name, subject, marks, grade, ) {
+            alert('Name :-' + name + ' \nSubject :-' + subject + '\nMarks :-' + marks + '\nGrade :-' + grade)
+
+        }
+
+        function XYZ(callback) {
+            var name = prompt("Enter a Name")
+            var subject = prompt("Enter a Subject")
+            var marks = prompt("Enter a Marks")
+            var grade = prompt("Enter a Grade")
+            callback(name, subject, marks, grade)
+        }
+        XYZ(ABC)
+    </script>
+</body>
+
+</html>

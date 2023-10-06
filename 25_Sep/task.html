@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function inner(name, roll_no, subject, marks, grade, reg_no) {
+            alert("Name  :-" + name + "\nRoll no :-" + roll_no + "\nSubject:-" + subject + "\nMarks :-" + marks + "\nGrade :-" + grade + "\nRegister No" + reg_no)
+        }
+
+        function outer(kiran) {
+            var name = prompt("Enter a Name")
+            var roll_no = prompt("Enter a  Roll No")
+            var subject = prompt("Enter a Subject ")
+            var marks = prompt("Enter a Marks")
+            var grade = prompt("Enter a grade")
+            var reg_no = prompt("Entera register no")
+            kiran(name, roll_no, subject, marks, grade, reg_no)
+        }
+        outer(inner)
+    </script>
+</body>
+
+</html>
